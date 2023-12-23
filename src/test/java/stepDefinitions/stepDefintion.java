@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -24,13 +25,13 @@ public class stepDefintion {
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@Then("{string} in response body is {string}")
+	@And("{string} in response body is {string}")
 	public void in_response_body_is(String string, String string2) {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@Then("verify place_Id created maps to {string} using {string}")
+	@And("verify place_Id created maps to {string} using {string}")
 	public void verify_place_id_created_maps_to_using(String string, String string2) {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
