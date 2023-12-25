@@ -67,11 +67,17 @@ public class stepDefintion extends Utils{
 	}
 
 	@And("verify place_Id created maps to {string} using {string}")
-	public void verify_place_id_created_maps_to_using(String string, String string2) {
+	public void verify_place_id_created_maps_to_using(String expectedName, String resource) throws IOException {
 	   
 		
 		place_id=getJsonPath(response,"place_id");
-//		res=given
+		res=given().spec(requestSpecification()).queryParam("place_id", place_id);
+		user_calls_with_http_request(resource, "GET");
+		
+		String actualName = getJsonPath(response, "name");
+		assertEquals(actualName,expectedName);
+		
+		
 	}
 
 
