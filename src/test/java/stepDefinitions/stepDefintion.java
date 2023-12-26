@@ -79,6 +79,14 @@ public class stepDefintion extends Utils{
 		
 		
 	}
+	
+	@Given("DeletePlace Payload")
+	public void delete_place_payload() throws IOException {
+		
+		res= given().spec(requestSpecification()).body(data.deletePlacePayload(place_id));
+	  
+		
+	}
 
 
 
