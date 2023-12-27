@@ -5,6 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.junit.Assert;
+
 import static org.junit.Assert.*;
 
 import io.cucumber.java.en.And;
@@ -24,6 +27,8 @@ import pojo.Location;
 import resources.APIResources;
 import resources.TestDataBuild;
 import resources.Utils;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+
 public class stepDefintion extends Utils{
 	
 	RequestSpecification res;
@@ -74,7 +79,11 @@ public class stepDefintion extends Utils{
 		res=given().spec(requestSpecification()).queryParam("place_id", place_id);
 		user_calls_with_http_request(resource, "GET");
 		
+		System.out.println("the response is =============="+ response);
+		
 		String actualName = getJsonPath(response, "name");
+		
+		System.out.println("the Actual name is "+ actualName);
 		assertEquals(actualName,expectedName);
 		
 		
@@ -85,6 +94,22 @@ public class stepDefintion extends Utils{
 		
 		res= given().spec(requestSpecification()).body(data.deletePlacePayload(place_id));
 	  
+		
+	}
+	
+	@Then("validate the json schema")
+	public void validate_the_json_schema() throws IOException {
+		
+//		String response1=response.asString();
+//		
+//		System.out.println("===========================================================");
+//		System.out.println("the response is "+response1);
+//		
+//		Assert.assertEquals(response1, matchesJsonSchemaInClasspath("D:\\APIFramework\\src\\test\\java\\resources\\products-schema.json") );\
+		
+		res=given().spec(requestSpecification()).queryParam("place_id", place_id);
+		res.when().get("/maps/api/place/get/json").then().assertThat().body(matchesJsonSchemaInClasspath("products-schema.json"));
+
 		
 	}
 
