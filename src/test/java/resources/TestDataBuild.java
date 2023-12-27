@@ -40,5 +40,19 @@ public class TestDataBuild {
 		
 		
 	}
+	
+	public String loginPayload() {
+		
+		return "{\r\n"
+				+ "    \"userEmail\": \"rajesh9487@gmail.com\",\r\n"
+				+ "    \"userPassword\": \"Money4money@\"\r\n"
+				+ "}";
+	}
+	
+	
+	
+	
+	
+	
 
 }

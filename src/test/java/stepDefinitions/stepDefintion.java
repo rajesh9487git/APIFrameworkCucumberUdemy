@@ -107,7 +107,7 @@ public class stepDefintion extends Utils{
 //		
 //		Assert.assertEquals(response1, matchesJsonSchemaInClasspath("D:\\APIFramework\\src\\test\\java\\resources\\products-schema.json") );\
 		
-		res=given().spec(requestSpecification()).queryParam("place_id", place_id);
+	
 		res.when().get("/maps/api/place/get/json").then().assertThat().body(matchesJsonSchemaInClasspath("products-schema.json"));
 
 		
