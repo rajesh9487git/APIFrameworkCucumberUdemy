@@ -11,7 +11,7 @@ Request params:	productName=Laptop
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZkNjU1NjlmZDk5Yzg1ZThkZWU5OGQiLCJ1c2VyRW1haWwiOiJyYWplc2g5NDg3QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk5ODA0MTExNTYsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3MDM2ODY4OTQsImV4cCI6MTczNTI0NDQ5NH0.OOVon2H_66QCm5LrB8fvTWNN6j_q2FDy3eSp5wAjdGU
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZkNjU1NjlmZDk5Yzg1ZThkZWU5OGQiLCJ1c2VyRW1haWwiOiJyYWplc2g5NDg3QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk5ODA0MTExNTYsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3MDM3NTE0NzcsImV4cCI6MTczNTMwOTA3N30.J8eyd6hpe03LVxGP5rs01L6g6_Zn4XHTfiIxsAWnfbM
 				Accept=*/*
 				Content-Type=multipart/form-data
 Cookies:		<none>
@@ -22,7 +22,7 @@ Multiparts:		------------
 				D:\Image\LaptopImage.jpeg
 Body:			<none>
 HTTP/1.1 201 Created
-Date: Wed, 27 Dec 2023 14:21:36 GMT
+Date: Thu, 28 Dec 2023 08:17:59 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
 X-DNS-Prefetch-Control: off
@@ -37,12 +37,99 @@ X-XSS-Protection: 0
 Access-Control-Allow-Origin: *
 Content-Type: application/json; charset=utf-8
 Content-Length: 79
-ETag: W/"4f-UdwU2PGjuaQkfQDrTyZUegclzew"
+ETag: W/"4f-ioxP0JwW7oaWWD6zhn6dbJ+R6mI"
 Vary: Accept-Encoding
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 
 {
-    "productId": "658c32f09fd99c85e8f57af4",
+    "productId": "658d2f379fd99c85e8f62f33",
     "message": "Product Added Successfully"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/get-product-detail/658d2f379fd99c85e8f62f33
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=658d2f379fd99c85e8f62f33
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZkNjU1NjlmZDk5Yzg1ZThkZWU5OGQiLCJ1c2VyRW1haWwiOiJyYWplc2g5NDg3QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk5ODA0MTExNTYsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3MDM3NTE0NzcsImV4cCI6MTczNTMwOTA3N30.J8eyd6hpe03LVxGP5rs01L6g6_Zn4XHTfiIxsAWnfbM
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 28 Dec 2023 08:17:59 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 458
+ETag: W/"1ca-Zi8U2I5OHHwfH4BKmaoS/h5/rNk"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "data": {
+        "_id": "658d2f379fd99c85e8f62f33",
+        "productName": "Laptop",
+        "productCategory": "fashion",
+        "productSubCategory": "shirts",
+        "productPrice": 11500,
+        "productDescription": "Lenova",
+        "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1703751479264.jpeg",
+        "productRating": "0",
+        "productTotalOrders": "0",
+        "productStatus": true,
+        "productFor": "men",
+        "productAddedBy": "656d65569fd99c85e8dee98d",
+        "__v": 0
+    },
+    "message": "Product Details fetched Successfully"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/api/ecom/product/delete-product/658d2f379fd99c85e8f62f33
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	productId=658d2f379fd99c85e8f62f33
+Headers:		authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTZkNjU1NjlmZDk5Yzg1ZThkZWU5OGQiLCJ1c2VyRW1haWwiOiJyYWplc2g5NDg3QGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk5ODA0MTExNTYsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3MDM3NTE0NzcsImV4cCI6MTczNTMwOTA3N30.J8eyd6hpe03LVxGP5rs01L6g6_Zn4XHTfiIxsAWnfbM
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 28 Dec 2023 08:18:00 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 42
+ETag: W/"2a-2mOwR6FOFcYds+NaVy6wWIOyKCY"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "message": "Product Deleted Successfully"
 }

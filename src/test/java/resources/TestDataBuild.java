@@ -51,6 +51,17 @@ public class TestDataBuild {
 	
 	
 	
+	public String createOrderPayload(String productId) {
+		
+		return "{\r\n"
+				+ "  \"orders\": [\r\n"
+				+ "    {\r\n"
+				+ "      \"country\": \"India\",\r\n"
+				+ "      \"productOrderedId\": \""+productId+"\"\r\n"
+				+ "    }\r\n"
+				+ "  ]\r\n"
+				+ "}";
+	}
 	
 	
 	
