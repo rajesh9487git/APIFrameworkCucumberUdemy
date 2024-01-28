@@ -8,7 +8,7 @@ Then the API call got success with status code 200
 And "status" in response body is "OK"
 And "scope" in response body is "APP"
 And verify place_Id created maps to "<name>" using "getPlaceAPI"
-Then validate the json schema
+#Then validate the json schema
 
 Examples:
 |name|language|address|

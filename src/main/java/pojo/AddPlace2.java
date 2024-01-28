@@ -2,7 +2,7 @@ package pojo;
 
 import java.util.List;
 
-public class AddPlace {
+public class AddPlace2 {
 	
 	private int accuracy;
 	private String name;
@@ -10,8 +10,8 @@ public class AddPlace {
 	private String address;
 	private String website;
 	private String language;
-	private Location location;
-	private List<String> types;
+	private Location2 location;
+	private String types;
 	
 	
 	public int getAccuracy() {
@@ -50,16 +50,16 @@ public class AddPlace {
 	public void setLanguage(String language) {
 		this.language = language;
 	}
-	public Location getLocation() {
+	public Location2 getLocation() {
 		return location;
 	}
-	public void setLocation(Location location) {
+	public void setLocation(Location2 location) {
 		this.location = location;
 	}
-	public List<String> getTypes() {
+	public String getTypes() {
 		return types;
 	}
-	public void setTypes(List<String> types) {
+	public void setTypes(String types) {
 		this.types = types;
 	}
 	
